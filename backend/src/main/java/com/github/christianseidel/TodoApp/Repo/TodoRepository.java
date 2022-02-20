@@ -17,7 +17,26 @@ public class TodoRepository {
         todoRepo.add(todo);
     }
 
+    public TodoItem getTodoItem (TodoItem){
+        todoRepo.get
+    }
+
+    public void deleteTodoItem (TodoItem todo) {
+        todoRepo.remove(todo);
+    }
+
     public List<TodoItem> getTodos() {
         return todoRepo;
+    }
+
+    public int size() {
+        return this.todoRepo.size();
+    }
+
+    @Override
+    public String toString() {
+        return "TodoRepository{" +
+                "todoRepo=" + todoRepo +
+                '}';
     }
 }
