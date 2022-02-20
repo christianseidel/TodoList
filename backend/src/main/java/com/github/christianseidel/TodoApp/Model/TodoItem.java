@@ -31,9 +31,6 @@ public class TodoItem {
 
     @Override
     public String toString() {
-        return "TodoItem{" +
-                "todo='" + todo + '\'' +
-                ", status='" + status + '\'' +
-                '}';
+        return "Todo: " + todo + ", Status: " + status.status(todo);
     }
 }

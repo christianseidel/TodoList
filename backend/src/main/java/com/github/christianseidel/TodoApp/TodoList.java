@@ -7,9 +7,9 @@ public class TodoList {
 
     public static void main(String[] args) {
         String b = "Putzen";
-        System.out.println(b + " " + Status.open);
+        System.out.println(new TodoItem(b, Status.OPEN));
 
-    TodoItem machmal = new TodoItem("Lachen", Status.started);
+    TodoItem machmal = new TodoItem("Lachen", Status.STARTED);
         System.out.println(machmal);
     }
 

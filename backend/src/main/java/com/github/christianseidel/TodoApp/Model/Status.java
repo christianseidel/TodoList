@@ -1,9 +1,9 @@
 package com.github.christianseidel.TodoApp.Model;
 
 public enum Status {
-    open("offen"),
-    started("begonnen"),
-    closed("abgeschlossen");
+    OPEN("offen"),
+    STARTED("begonnen"),
+    CLOSED("abgeschlossen");
 
     private String tag;
 
@@ -11,7 +11,7 @@ public enum Status {
         this.tag = tag;
     }
 
-    public String status() {
-        return this.tag;
+    public String status(String state) {
+        return tag;
     }
 }
